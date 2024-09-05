@@ -13,7 +13,7 @@ export default function ImageWithText({ blok }) {
       />
       <h2 className="text-lg font-bold mt-4 text-center">{blok.Title}</h2>
       <div className="py-2 text-center">
-        {blok.text && <RichTextDefault blok={{ richtext: blok.caption }} />}
+        {blok.text && <RichTextDefault blok={{ richtext: blok.text }} />}
       </div>
     </div>
   );
