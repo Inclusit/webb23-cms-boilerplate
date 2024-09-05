@@ -11,7 +11,7 @@ export default function TextfieldWLink({ blok }) {
         <div className="flex-1 mb-6 md:mb-0 md:mr-8">
           <div className="pr-0 md:pr-16">
         
-            {blok.text_field && blok.text_field.content && (
+            {blok.text_field.content && (
                 <RichTextDefault blok={{ richtext: blok.text_field }} />
             )}
 

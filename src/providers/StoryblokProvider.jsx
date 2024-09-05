@@ -11,7 +11,6 @@ import RichTextDefault from "@/components/nestable/RichText";
 import TextfieldWBtn from "@/components/content-types/TextfieldWBtn";
 import TextfieldWLink from "@/components/content-types/TextfieldWLink";
 import Btn from "@/components/content-types/Btn";
-import ImageGallery from "@/components/content-types/ImageGallery";
 import FormWrapper from "@/components/nestable/FormWrapper";
 import Hero from "@/components/layout/Hero";
 import ImageWithText from "@/components/content-types/ImageWithText";
@@ -26,7 +25,6 @@ const components = {
   text_field_w_btn: TextfieldWBtn,
   text_field_w_link: TextfieldWLink,
   btn: Btn,
-  image_gallery: ImageGallery,
   form_wrapper: FormWrapper,
   hero: Hero,
   Grid: Grid,
