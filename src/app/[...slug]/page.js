@@ -28,7 +28,7 @@ export default async function CMSPage({ params }) {
 
     return <StoryblokStory story={currentStory} />;
   } catch (error) {
-    notFound();
+    /* notFound(); */
   }
 }
 
