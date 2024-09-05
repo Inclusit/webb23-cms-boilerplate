@@ -44,7 +44,6 @@ export class StoryblokCMS {
   static async generateMetaFromStory(slug) {
     const metadata = await this.getStory({ slug: [slug] });
     const {meta_title, meta_description} = metadata.content
-    {console.log(metadata)}
     if (!metadata) return {};
 
     //Read nextjs metadata docs

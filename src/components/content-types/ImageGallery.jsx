@@ -3,6 +3,7 @@ import Image from "next/image";
 import RichTextDefault from "../nestable/RichText";
 
 export default function ImageGallery({ blok }) {
+    
   return (
     <div className="flex flex-col items-center p-4 rounded-lg ">
       <div className="flex space-x-20">
