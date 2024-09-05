@@ -11,13 +11,15 @@ export default function ImageGallery({ blok }) {
             <Image
               src={imageBlock.image.filename}
               alt={imageBlock.image.alt || "Image"}
-              width={256} 
-              height={256} 
+              width={256}
+              height={256}
               className="object-cover rounded-lg border border-gray-300 shadow-lg"
             />
-            {imageBlock.caption && (
-              <RichTextDefault blok={{ richtext: imageBlock.caption }} />
-            )}
+            <div className="py-5">
+              {imageBlock.caption && (
+                <RichTextDefault blok={{ richtext: imageBlock.caption }} />
+              )}
+            </div>
           </div>
         ))}
       </div>

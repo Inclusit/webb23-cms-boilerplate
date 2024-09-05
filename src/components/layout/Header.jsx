@@ -19,8 +19,14 @@ export default function Header({ config }) {
               />
             )}
           </span>
-          <div className="lg:flex lg:gap-x-12">
-           
+          <div className="lg:flex lg:gap-x-12 ">
+            {config?.content?.header_menu?.map((item) => (
+              <Link key={item._uid} href={`/${item.link.cached_url}`}>
+                <span className="text-base font-medium text-gray-900 hover:text-gray-400">
+                  {item.name}
+                </span>
+              </Link>
+            ))}
           </div>
         </nav>
       </header>
