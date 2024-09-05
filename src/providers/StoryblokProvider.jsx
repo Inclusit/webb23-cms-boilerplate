@@ -14,6 +14,8 @@ import Btn from "@/components/content-types/Btn";
 import ImageGallery from "@/components/content-types/ImageGallery";
 import FormWrapper from "@/components/nestable/FormWrapper";
 import Hero from "@/components/layout/Hero";
+import ImageWithText from "@/components/content-types/ImageWithText";
+import Grid from "@/components/nestable/Grid";
 
 
 const components = {
@@ -24,9 +26,11 @@ const components = {
   text_field_w_btn: TextfieldWBtn,
   text_field_w_link: TextfieldWLink,
   btn: Btn,
-  image_gallery: ImageGallery,  
+  image_gallery: ImageGallery,
   form_wrapper: FormWrapper,
   hero: Hero,
+  Grid: Grid,
+  ImageWithText: ImageWithText,
 };
 
 storyblokInit({

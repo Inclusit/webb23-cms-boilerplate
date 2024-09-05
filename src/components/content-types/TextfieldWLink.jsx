@@ -4,13 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function TextfieldWLink({ blok }) {
+    {console.log(blok.text_field.content)}
   return (
     <div className="flex flex-col items-center py-10">
       <div className="w-full max-w-6xl px-4 sm:px-8 md:px-12 flex flex-col md:flex-row items-start">
         <div className="flex-1 mb-6 md:mb-0 md:mr-8">
-          {blok.text_field && blok.text_field.content && (
             <RichTextDefault blok={{ richtext: blok.text_field }} />
-          )}
 
           {blok.link && blok.link.cached_url && blok.link_text && (
             <div className="mt-4">
